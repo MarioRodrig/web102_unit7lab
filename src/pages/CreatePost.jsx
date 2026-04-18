@@ -12,8 +12,10 @@ const CreatePost = () => {
         title: post.title,
         author: post.author,
         description: post.description,
-      })
-      .select();
+      }).select();
+
+        window.location = "/";
+        <input type="submit" value="submit" onClick={createPost}> </input>
   };
 
   const [post, setPost] = useState({ title: "", author: "", description: "" });
