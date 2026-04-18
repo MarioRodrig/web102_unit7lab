@@ -15,7 +15,6 @@ const CreatePost = () => {
       }).select();
 
         window.location = "/";
-        <input type="submit" value="submit" onClick={createPost}> </input>
   };
 
   const [post, setPost] = useState({ title: "", author: "", description: "" });
@@ -32,7 +31,7 @@ const CreatePost = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={createPost}>
         <label htmlFor="title">Title</label> <br />
         <input type="text" id="title" name="title" onChange={handleChange} />
         <br />
