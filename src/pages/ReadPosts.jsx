@@ -15,7 +15,7 @@ const ReadPosts = (props) => {
       // set state of posts
       setPosts(data);
     };
-    fetchPost(); 
+    fetchPost();
   }, [props]);
 
   return (
@@ -30,6 +30,8 @@ const ReadPosts = (props) => {
               title={post.title}
               author={post.author}
               description={post.description}
+              spiciness={post.spiciness}
+              category={post.category}
             />
           ))
       ) : (
